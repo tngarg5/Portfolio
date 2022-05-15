@@ -89,7 +89,7 @@ header {
 
 p {
     padding-right: 30px;
-    text-align: center;
+   
 }
 
 /* text css above hero image*/
@@ -220,6 +220,9 @@ a:active {
         flex-direction: column;
         padding: 0px;
 
+    }
+    p{
+        text-align: center;
     }
 
     .cv {
