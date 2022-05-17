@@ -62,12 +62,19 @@ body {
 header {
     background-color: var(--light-navy);
     box-shadow: var(--navy-shadow);
+    margin-bottom: 15px;
+   
+   
 
 }
 
 .jJFfEJ {
     display: flex;
     flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
 }
 
@@ -83,7 +90,7 @@ header {
 }
 
 #about {
-    margin: 10vh 0 0 20vw;
+    margin: 20vh 0 0 20vw;
     padding: 10px;
 }
 
@@ -211,6 +218,37 @@ a:active {
 
 
 
+}
+.foots {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    
+}
+
+.foot a {
+    margin: 20px auto;
+    padding: 10px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    line-height: var(--fz-lg);
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    outline: none;
+    letter-spacing: 5px;
+}
+.foot::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
 }
 
 @media screen and (max-width : 1000px) {
